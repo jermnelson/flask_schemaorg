@@ -3103,6 +3103,745 @@ class TestClip(unittest.TestCase):
 		pass
 
 
+class TestClothingStore(unittest.TestCase):
+
+	def setUp(self):
+		self.clothing_store = ClothingStore()
+
+	def test_init(self):
+		self.assertEquals(type(self.clothing_store), ClothingStore)
+
+	def test_rdf_properties(self):
+		self.assert_(hasattr(self.clothing_store, "additionalType"))
+		self.assert_(hasattr(self.clothing_store, "alternateName"))
+		self.assert_(hasattr(self.clothing_store, "branchOf"))
+		self.assert_(hasattr(self.clothing_store, "containedIn"))
+		self.assert_(hasattr(self.clothing_store, "currenciesAccepted"))
+		self.assert_(hasattr(self.clothing_store, "description"))
+		self.assert_(hasattr(self.clothing_store, "geo"))
+		self.assert_(hasattr(self.clothing_store, "image"))
+		self.assert_(hasattr(self.clothing_store, "map"))
+		self.assert_(hasattr(self.clothing_store, "maps"))
+		self.assert_(hasattr(self.clothing_store, "name"))
+		self.assert_(hasattr(self.clothing_store, "openingHoursSpecification"))
+		self.assert_(hasattr(self.clothing_store, "paymentAccepted"))
+		self.assert_(hasattr(self.clothing_store, "photo"))
+		self.assert_(hasattr(self.clothing_store, "photos"))
+		self.assert_(hasattr(self.clothing_store, "priceRange"))
+		self.assert_(hasattr(self.clothing_store, "sameAs"))
+		self.assert_(hasattr(self.clothing_store, "url"))
+
+	def tearDown(self):
+		pass
+
+
+class TestCode(unittest.TestCase):
+
+	def setUp(self):
+		self.code = Code()
+
+	def test_init(self):
+		self.assertEquals(type(self.code), Code)
+
+	def test_rdf_properties(self):
+		self.assert_(hasattr(self.code, "accessibilityAPI"))
+		self.assert_(hasattr(self.code, "accessibilityControl"))
+		self.assert_(hasattr(self.code, "accessibilityFeature"))
+		self.assert_(hasattr(self.code, "accessibilityHazard"))
+		self.assert_(hasattr(self.code, "accountablePerson"))
+		self.assert_(hasattr(self.code, "additionalType"))
+		self.assert_(hasattr(self.code, "alternateName"))
+		self.assert_(hasattr(self.code, "alternativeHeadline"))
+		self.assert_(hasattr(self.code, "associatedMedia"))
+		self.assert_(hasattr(self.code, "audio"))
+		self.assert_(hasattr(self.code, "author"))
+		self.assert_(hasattr(self.code, "citation"))
+		self.assert_(hasattr(self.code, "codeRepository"))
+		self.assert_(hasattr(self.code, "comment"))
+		self.assert_(hasattr(self.code, "contentLocation"))
+		self.assert_(hasattr(self.code, "contentRating"))
+		self.assert_(hasattr(self.code, "contributor"))
+		self.assert_(hasattr(self.code, "copyrightHolder"))
+		self.assert_(hasattr(self.code, "copyrightYear"))
+		self.assert_(hasattr(self.code, "dateCreated"))
+		self.assert_(hasattr(self.code, "dateModified"))
+		self.assert_(hasattr(self.code, "datePublished"))
+		self.assert_(hasattr(self.code, "description"))
+		self.assert_(hasattr(self.code, "discussionUrl"))
+		self.assert_(hasattr(self.code, "editor"))
+		self.assert_(hasattr(self.code, "educationalAlignment"))
+		self.assert_(hasattr(self.code, "educationalUse"))
+		self.assert_(hasattr(self.code, "encoding"))
+		self.assert_(hasattr(self.code, "encodings"))
+		self.assert_(hasattr(self.code, "genre"))
+		self.assert_(hasattr(self.code, "headline"))
+		self.assert_(hasattr(self.code, "image"))
+		self.assert_(hasattr(self.code, "inLanguage"))
+		self.assert_(hasattr(self.code, "interactivityType"))
+		self.assert_(hasattr(self.code, "isBasedOnUrl"))
+		self.assert_(hasattr(self.code, "isFamilyFriendly"))
+		self.assert_(hasattr(self.code, "keywords"))
+		self.assert_(hasattr(self.code, "learningResourceType"))
+		self.assert_(hasattr(self.code, "mentions"))
+		self.assert_(hasattr(self.code, "name"))
+		self.assert_(hasattr(self.code, "programmingLanguage"))
+		self.assert_(hasattr(self.code, "publisher"))
+		self.assert_(hasattr(self.code, "publishingPrinciples"))
+		self.assert_(hasattr(self.code, "runtime"))
+		self.assert_(hasattr(self.code, "sameAs"))
+		self.assert_(hasattr(self.code, "sampleType"))
+		self.assert_(hasattr(self.code, "sourceOrganization"))
+		self.assert_(hasattr(self.code, "targetProduct"))
+		self.assert_(hasattr(self.code, "text"))
+		self.assert_(hasattr(self.code, "thumbnailUrl"))
+		self.assert_(hasattr(self.code, "timeRequired"))
+		self.assert_(hasattr(self.code, "url"))
+		self.assert_(hasattr(self.code, "version"))
+		self.assert_(hasattr(self.code, "video"))
+
+	def tearDown(self):
+		pass
+
+
+class TestCollectionPage(unittest.TestCase):
+
+	def setUp(self):
+		self.collection_page = CollectionPage()
+
+	def test_init(self):
+		self.assertEquals(type(self.collection_page), CollectionPage)
+
+	def test_rdf_properties(self):
+		self.assert_(hasattr(self.collection_page, "accessibilityAPI"))
+		self.assert_(hasattr(self.collection_page, "accessibilityControl"))
+		self.assert_(hasattr(self.collection_page, "accessibilityFeature"))
+		self.assert_(hasattr(self.collection_page, "accessibilityHazard"))
+		self.assert_(hasattr(self.collection_page, "accountablePerson"))
+		self.assert_(hasattr(self.collection_page, "additionalType"))
+		self.assert_(hasattr(self.collection_page, "alternateName"))
+		self.assert_(hasattr(self.collection_page, "alternativeHeadline"))
+		self.assert_(hasattr(self.collection_page, "associatedMedia"))
+		self.assert_(hasattr(self.collection_page, "audio"))
+		self.assert_(hasattr(self.collection_page, "author"))
+		self.assert_(hasattr(self.collection_page, "breadcrumb"))
+		self.assert_(hasattr(self.collection_page, "citation"))
+		self.assert_(hasattr(self.collection_page, "comment"))
+		self.assert_(hasattr(self.collection_page, "contentLocation"))
+		self.assert_(hasattr(self.collection_page, "contentRating"))
+		self.assert_(hasattr(self.collection_page, "contributor"))
+		self.assert_(hasattr(self.collection_page, "copyrightHolder"))
+		self.assert_(hasattr(self.collection_page, "copyrightYear"))
+		self.assert_(hasattr(self.collection_page, "dateCreated"))
+		self.assert_(hasattr(self.collection_page, "dateModified"))
+		self.assert_(hasattr(self.collection_page, "datePublished"))
+		self.assert_(hasattr(self.collection_page, "description"))
+		self.assert_(hasattr(self.collection_page, "discussionUrl"))
+		self.assert_(hasattr(self.collection_page, "editor"))
+		self.assert_(hasattr(self.collection_page, "educationalAlignment"))
+		self.assert_(hasattr(self.collection_page, "educationalUse"))
+		self.assert_(hasattr(self.collection_page, "encoding"))
+		self.assert_(hasattr(self.collection_page, "encodings"))
+		self.assert_(hasattr(self.collection_page, "genre"))
+		self.assert_(hasattr(self.collection_page, "headline"))
+		self.assert_(hasattr(self.collection_page, "image"))
+		self.assert_(hasattr(self.collection_page, "inLanguage"))
+		self.assert_(hasattr(self.collection_page, "interactivityType"))
+		self.assert_(hasattr(self.collection_page, "isBasedOnUrl"))
+		self.assert_(hasattr(self.collection_page, "isFamilyFriendly"))
+		self.assert_(hasattr(self.collection_page, "isPartOf"))
+		self.assert_(hasattr(self.collection_page, "keywords"))
+		self.assert_(hasattr(self.collection_page, "lastReviewed"))
+		self.assert_(hasattr(self.collection_page, "learningResourceType"))
+		self.assert_(hasattr(self.collection_page, "mainContentOfPage"))
+		self.assert_(hasattr(self.collection_page, "mentions"))
+		self.assert_(hasattr(self.collection_page, "name"))
+		self.assert_(hasattr(self.collection_page, "primaryImageOfPage"))
+		self.assert_(hasattr(self.collection_page, "publisher"))
+		self.assert_(hasattr(self.collection_page, "publishingPrinciples"))
+		self.assert_(hasattr(self.collection_page, "relatedLink"))
+		self.assert_(hasattr(self.collection_page, "reviewedBy"))
+		self.assert_(hasattr(self.collection_page, "sameAs"))
+		self.assert_(hasattr(self.collection_page, "significantLink"))
+		self.assert_(hasattr(self.collection_page, "significantLinks"))
+		self.assert_(hasattr(self.collection_page, "sourceOrganization"))
+		self.assert_(hasattr(self.collection_page, "specialty"))
+		self.assert_(hasattr(self.collection_page, "text"))
+		self.assert_(hasattr(self.collection_page, "thumbnailUrl"))
+		self.assert_(hasattr(self.collection_page, "timeRequired"))
+		self.assert_(hasattr(self.collection_page, "url"))
+		self.assert_(hasattr(self.collection_page, "version"))
+		self.assert_(hasattr(self.collection_page, "video"))
+
+	def tearDown(self):
+		pass
+
+
+class TestCollegeOrUniversity(unittest.TestCase):
+
+	def setUp(self):
+		self.college_or_university = CollegeOrUniversity()
+
+	def test_init(self):
+		self.assertEquals(type(self.college_or_university), CollegeOrUniversity)
+
+	def test_rdf_properties(self):
+		self.assert_(hasattr(self.college_or_university, "additionalType"))
+		self.assert_(hasattr(self.college_or_university, "alternateName"))
+		self.assert_(hasattr(self.college_or_university, "alumni"))
+		self.assert_(hasattr(self.college_or_university, "department"))
+		self.assert_(hasattr(self.college_or_university, "description"))
+		self.assert_(hasattr(self.college_or_university, "employee"))
+		self.assert_(hasattr(self.college_or_university, "employees"))
+		self.assert_(hasattr(self.college_or_university, "founder"))
+		self.assert_(hasattr(self.college_or_university, "founders"))
+		self.assert_(hasattr(self.college_or_university, "foundingDate"))
+		self.assert_(hasattr(self.college_or_university, "image"))
+		self.assert_(hasattr(self.college_or_university, "legalName"))
+		self.assert_(hasattr(self.college_or_university, "member"))
+		self.assert_(hasattr(self.college_or_university, "members"))
+		self.assert_(hasattr(self.college_or_university, "name"))
+		self.assert_(hasattr(self.college_or_university, "sameAs"))
+		self.assert_(hasattr(self.college_or_university, "subOrganization"))
+		self.assert_(hasattr(self.college_or_university, "url"))
+
+	def tearDown(self):
+		pass
+
+
+class TestComedyClub(unittest.TestCase):
+
+	def setUp(self):
+		self.comedy_club = ComedyClub()
+
+	def test_init(self):
+		self.assertEquals(type(self.comedy_club), ComedyClub)
+
+	def test_rdf_properties(self):
+		self.assert_(hasattr(self.comedy_club, "additionalType"))
+		self.assert_(hasattr(self.comedy_club, "address"))
+		self.assert_(hasattr(self.comedy_club, "aggregateRating"))
+		self.assert_(hasattr(self.comedy_club, "alternateName"))
+		self.assert_(hasattr(self.comedy_club, "branchOf"))
+		self.assert_(hasattr(self.comedy_club, "containedIn"))
+		self.assert_(hasattr(self.comedy_club, "currenciesAccepted"))
+		self.assert_(hasattr(self.comedy_club, "description"))
+		self.assert_(hasattr(self.comedy_club, "event"))
+		self.assert_(hasattr(self.comedy_club, "events"))
+		self.assert_(hasattr(self.comedy_club, "faxNumber"))
+		self.assert_(hasattr(self.comedy_club, "geo"))
+		self.assert_(hasattr(self.comedy_club, "globalLocationNumber"))
+		self.assert_(hasattr(self.comedy_club, "image"))
+		self.assert_(hasattr(self.comedy_club, "interactionCount"))
+		self.assert_(hasattr(self.comedy_club, "isicV4"))
+		self.assert_(hasattr(self.comedy_club, "logo"))
+		self.assert_(hasattr(self.comedy_club, "map"))
+		self.assert_(hasattr(self.comedy_club, "maps"))
+		self.assert_(hasattr(self.comedy_club, "name"))
+		self.assert_(hasattr(self.comedy_club, "openingHours"))
+		self.assert_(hasattr(self.comedy_club, "openingHoursSpecification"))
+		self.assert_(hasattr(self.comedy_club, "paymentAccepted"))
+		self.assert_(hasattr(self.comedy_club, "photo"))
+		self.assert_(hasattr(self.comedy_club, "photos"))
+		self.assert_(hasattr(self.comedy_club, "priceRange"))
+		self.assert_(hasattr(self.comedy_club, "review"))
+		self.assert_(hasattr(self.comedy_club, "reviews"))
+		self.assert_(hasattr(self.comedy_club, "sameAs"))
+		self.assert_(hasattr(self.comedy_club, "telephone"))
+		self.assert_(hasattr(self.comedy_club, "url"))
+
+	def tearDown(self):
+		pass
+
+
+class TestComedyEvent(unittest.TestCase):
+
+	def setUp(self):
+		self.comedy_event = ComedyEvent()
+
+	def test_init(self):
+		self.assertEquals(type(self.comedy_event), ComedyEvent)
+
+	def test_rdf_properties(self):
+		self.assert_(hasattr(self.comedy_event, "additionalType"))
+		self.assert_(hasattr(self.comedy_event, "alternateName"))
+		self.assert_(hasattr(self.comedy_event, "attendee"))
+		self.assert_(hasattr(self.comedy_event, "attendees"))
+		self.assert_(hasattr(self.comedy_event, "description"))
+		self.assert_(hasattr(self.comedy_event, "doorTime"))
+		self.assert_(hasattr(self.comedy_event, "duration"))
+		self.assert_(hasattr(self.comedy_event, "endDate"))
+		self.assert_(hasattr(self.comedy_event, "eventStatus"))
+		self.assert_(hasattr(self.comedy_event, "image"))
+		self.assert_(hasattr(self.comedy_event, "location"))
+		self.assert_(hasattr(self.comedy_event, "name"))
+		self.assert_(hasattr(self.comedy_event, "offers"))
+		self.assert_(hasattr(self.comedy_event, "performer"))
+		self.assert_(hasattr(self.comedy_event, "performers"))
+		self.assert_(hasattr(self.comedy_event, "previousStartDate"))
+		self.assert_(hasattr(self.comedy_event, "sameAs"))
+		self.assert_(hasattr(self.comedy_event, "startDate"))
+		self.assert_(hasattr(self.comedy_event, "subEvent"))
+		self.assert_(hasattr(self.comedy_event, "subEvents"))
+		self.assert_(hasattr(self.comedy_event, "superEvent"))
+		self.assert_(hasattr(self.comedy_event, "typicalAgeRange"))
+		self.assert_(hasattr(self.comedy_event, "url"))
+
+	def tearDown(self):
+		pass
+
+
+class TestComment(unittest.TestCase):
+
+	def setUp(self):
+		self.comment = Comment()
+
+	def test_init(self):
+		self.assertEquals(type(self.comment), Comment)
+
+	def test_rdf_properties(self):
+		self.assert_(hasattr(self.comment, "about"))
+		self.assert_(hasattr(self.comment, "accessibilityAPI"))
+		self.assert_(hasattr(self.comment, "accessibilityControl"))
+		self.assert_(hasattr(self.comment, "accessibilityFeature"))
+		self.assert_(hasattr(self.comment, "accessibilityHazard"))
+		self.assert_(hasattr(self.comment, "accountablePerson"))
+		self.assert_(hasattr(self.comment, "additionalType"))
+		self.assert_(hasattr(self.comment, "aggregateRating"))
+		self.assert_(hasattr(self.comment, "alternateName"))
+		self.assert_(hasattr(self.comment, "alternativeHeadline"))
+		self.assert_(hasattr(self.comment, "associatedMedia"))
+		self.assert_(hasattr(self.comment, "audience"))
+		self.assert_(hasattr(self.comment, "audio"))
+		self.assert_(hasattr(self.comment, "author"))
+		self.assert_(hasattr(self.comment, "award"))
+		self.assert_(hasattr(self.comment, "awards"))
+		self.assert_(hasattr(self.comment, "citation"))
+		self.assert_(hasattr(self.comment, "comment"))
+		self.assert_(hasattr(self.comment, "contentLocation"))
+		self.assert_(hasattr(self.comment, "contentRating"))
+		self.assert_(hasattr(self.comment, "contributor"))
+		self.assert_(hasattr(self.comment, "copyrightHolder"))
+		self.assert_(hasattr(self.comment, "copyrightYear"))
+		self.assert_(hasattr(self.comment, "creator"))
+		self.assert_(hasattr(self.comment, "dateCreated"))
+		self.assert_(hasattr(self.comment, "dateModified"))
+		self.assert_(hasattr(self.comment, "datePublished"))
+		self.assert_(hasattr(self.comment, "description"))
+		self.assert_(hasattr(self.comment, "discussionUrl"))
+		self.assert_(hasattr(self.comment, "editor"))
+		self.assert_(hasattr(self.comment, "educationalAlignment"))
+		self.assert_(hasattr(self.comment, "educationalUse"))
+		self.assert_(hasattr(self.comment, "encoding"))
+		self.assert_(hasattr(self.comment, "encodings"))
+		self.assert_(hasattr(self.comment, "genre"))
+		self.assert_(hasattr(self.comment, "headline"))
+		self.assert_(hasattr(self.comment, "image"))
+		self.assert_(hasattr(self.comment, "inLanguage"))
+		self.assert_(hasattr(self.comment, "interactionCount"))
+		self.assert_(hasattr(self.comment, "interactivityType"))
+		self.assert_(hasattr(self.comment, "isBasedOnUrl"))
+		self.assert_(hasattr(self.comment, "isFamilyFriendly"))
+		self.assert_(hasattr(self.comment, "keywords"))
+		self.assert_(hasattr(self.comment, "learningResourceType"))
+		self.assert_(hasattr(self.comment, "mentions"))
+		self.assert_(hasattr(self.comment, "name"))
+		self.assert_(hasattr(self.comment, "offers"))
+		self.assert_(hasattr(self.comment, "provider"))
+		self.assert_(hasattr(self.comment, "publisher"))
+		self.assert_(hasattr(self.comment, "publishingPrinciples"))
+		self.assert_(hasattr(self.comment, "review"))
+		self.assert_(hasattr(self.comment, "reviews"))
+		self.assert_(hasattr(self.comment, "sameAs"))
+		self.assert_(hasattr(self.comment, "sourceOrganization"))
+		self.assert_(hasattr(self.comment, "text"))
+		self.assert_(hasattr(self.comment, "thumbnailUrl"))
+		self.assert_(hasattr(self.comment, "timeRequired"))
+		self.assert_(hasattr(self.comment, "typicalAgeRange"))
+		self.assert_(hasattr(self.comment, "url"))
+		self.assert_(hasattr(self.comment, "version"))
+		self.assert_(hasattr(self.comment, "video"))
+
+	def tearDown(self):
+		pass
+
+
+class TestCommentAction(unittest.TestCase):
+
+	def setUp(self):
+		self.comment_action = CommentAction()
+
+	def test_init(self):
+		self.assertEquals(type(self.comment_action), CommentAction)
+
+	def test_rdf_properties(self):
+		self.assert_(hasattr(self.comment_action, "about"))
+		self.assert_(hasattr(self.comment_action, "additionalType"))
+		self.assert_(hasattr(self.comment_action, "agent"))
+		self.assert_(hasattr(self.comment_action, "alternateName"))
+		self.assert_(hasattr(self.comment_action, "description"))
+		self.assert_(hasattr(self.comment_action, "endTime"))
+		self.assert_(hasattr(self.comment_action, "image"))
+		self.assert_(hasattr(self.comment_action, "instrument"))
+		self.assert_(hasattr(self.comment_action, "language"))
+		self.assert_(hasattr(self.comment_action, "location"))
+		self.assert_(hasattr(self.comment_action, "name"))
+		self.assert_(hasattr(self.comment_action, "object"))
+		self.assert_(hasattr(self.comment_action, "participant"))
+		self.assert_(hasattr(self.comment_action, "recipient"))
+		self.assert_(hasattr(self.comment_action, "result"))
+		self.assert_(hasattr(self.comment_action, "sameAs"))
+		self.assert_(hasattr(self.comment_action, "startTime"))
+		self.assert_(hasattr(self.comment_action, "url"))
+
+	def tearDown(self):
+		pass
+
+
+class TestCommunicateAction(unittest.TestCase):
+
+	def setUp(self):
+		self.communicate_action = CommunicateAction()
+
+	def test_init(self):
+		self.assertEquals(type(self.communicate_action), CommunicateAction)
+
+	def test_rdf_properties(self):
+		self.assert_(hasattr(self.communicate_action, "about"))
+		self.assert_(hasattr(self.communicate_action, "additionalType"))
+		self.assert_(hasattr(self.communicate_action, "agent"))
+		self.assert_(hasattr(self.communicate_action, "alternateName"))
+		self.assert_(hasattr(self.communicate_action, "description"))
+		self.assert_(hasattr(self.communicate_action, "endTime"))
+		self.assert_(hasattr(self.communicate_action, "image"))
+		self.assert_(hasattr(self.communicate_action, "instrument"))
+		self.assert_(hasattr(self.communicate_action, "language"))
+		self.assert_(hasattr(self.communicate_action, "location"))
+		self.assert_(hasattr(self.communicate_action, "name"))
+		self.assert_(hasattr(self.communicate_action, "object"))
+		self.assert_(hasattr(self.communicate_action, "participant"))
+		self.assert_(hasattr(self.communicate_action, "recipient"))
+		self.assert_(hasattr(self.communicate_action, "result"))
+		self.assert_(hasattr(self.communicate_action, "sameAs"))
+		self.assert_(hasattr(self.communicate_action, "startTime"))
+		self.assert_(hasattr(self.communicate_action, "url"))
+
+	def tearDown(self):
+		pass
+
+
+class TestConfirmAction(unittest.TestCase):
+
+	def setUp(self):
+		self.confirm_action = ConfirmAction()
+
+	def test_init(self):
+		self.assertEquals(type(self.confirm_action), ConfirmAction)
+
+	def test_rdf_properties(self):
+		self.assert_(hasattr(self.confirm_action, "about"))
+		self.assert_(hasattr(self.confirm_action, "additionalType"))
+		self.assert_(hasattr(self.confirm_action, "agent"))
+		self.assert_(hasattr(self.confirm_action, "alternateName"))
+		self.assert_(hasattr(self.confirm_action, "description"))
+		self.assert_(hasattr(self.confirm_action, "endTime"))
+		self.assert_(hasattr(self.confirm_action, "event"))
+		self.assert_(hasattr(self.confirm_action, "image"))
+		self.assert_(hasattr(self.confirm_action, "instrument"))
+		self.assert_(hasattr(self.confirm_action, "language"))
+		self.assert_(hasattr(self.confirm_action, "location"))
+		self.assert_(hasattr(self.confirm_action, "name"))
+		self.assert_(hasattr(self.confirm_action, "object"))
+		self.assert_(hasattr(self.confirm_action, "participant"))
+		self.assert_(hasattr(self.confirm_action, "recipient"))
+		self.assert_(hasattr(self.confirm_action, "result"))
+		self.assert_(hasattr(self.confirm_action, "sameAs"))
+		self.assert_(hasattr(self.confirm_action, "startTime"))
+		self.assert_(hasattr(self.confirm_action, "url"))
+
+	def tearDown(self):
+		pass
+
+
+class TestConsumeAction(unittest.TestCase):
+
+	def setUp(self):
+		self.consume_action = ConsumeAction()
+
+	def test_init(self):
+		self.assertEquals(type(self.consume_action), ConsumeAction)
+
+	def test_rdf_properties(self):
+		self.assert_(hasattr(self.consume_action, "additionalType"))
+		self.assert_(hasattr(self.consume_action, "agent"))
+		self.assert_(hasattr(self.consume_action, "alternateName"))
+		self.assert_(hasattr(self.consume_action, "description"))
+		self.assert_(hasattr(self.consume_action, "endTime"))
+		self.assert_(hasattr(self.consume_action, "image"))
+		self.assert_(hasattr(self.consume_action, "instrument"))
+		self.assert_(hasattr(self.consume_action, "location"))
+		self.assert_(hasattr(self.consume_action, "name"))
+		self.assert_(hasattr(self.consume_action, "object"))
+		self.assert_(hasattr(self.consume_action, "participant"))
+		self.assert_(hasattr(self.consume_action, "result"))
+		self.assert_(hasattr(self.consume_action, "sameAs"))
+		self.assert_(hasattr(self.consume_action, "startTime"))
+		self.assert_(hasattr(self.consume_action, "url"))
+
+	def tearDown(self):
+		pass
+
+
+class TestContactPage(unittest.TestCase):
+
+	def setUp(self):
+		self.contact_page = ContactPage()
+
+	def test_init(self):
+		self.assertEquals(type(self.contact_page), ContactPage)
+
+	def test_rdf_properties(self):
+		self.assert_(hasattr(self.contact_page, "about"))
+		self.assert_(hasattr(self.contact_page, "accessibilityAPI"))
+		self.assert_(hasattr(self.contact_page, "accessibilityControl"))
+		self.assert_(hasattr(self.contact_page, "accessibilityFeature"))
+		self.assert_(hasattr(self.contact_page, "accessibilityHazard"))
+		self.assert_(hasattr(self.contact_page, "accountablePerson"))
+		self.assert_(hasattr(self.contact_page, "additionalType"))
+		self.assert_(hasattr(self.contact_page, "aggregateRating"))
+		self.assert_(hasattr(self.contact_page, "alternateName"))
+		self.assert_(hasattr(self.contact_page, "alternativeHeadline"))
+		self.assert_(hasattr(self.contact_page, "associatedMedia"))
+		self.assert_(hasattr(self.contact_page, "audience"))
+		self.assert_(hasattr(self.contact_page, "audio"))
+		self.assert_(hasattr(self.contact_page, "author"))
+		self.assert_(hasattr(self.contact_page, "award"))
+		self.assert_(hasattr(self.contact_page, "awards"))
+		self.assert_(hasattr(self.contact_page, "breadcrumb"))
+		self.assert_(hasattr(self.contact_page, "citation"))
+		self.assert_(hasattr(self.contact_page, "comment"))
+		self.assert_(hasattr(self.contact_page, "contentLocation"))
+		self.assert_(hasattr(self.contact_page, "contentRating"))
+		self.assert_(hasattr(self.contact_page, "contributor"))
+		self.assert_(hasattr(self.contact_page, "copyrightHolder"))
+		self.assert_(hasattr(self.contact_page, "copyrightYear"))
+		self.assert_(hasattr(self.contact_page, "creator"))
+		self.assert_(hasattr(self.contact_page, "dateCreated"))
+		self.assert_(hasattr(self.contact_page, "dateModified"))
+		self.assert_(hasattr(self.contact_page, "datePublished"))
+		self.assert_(hasattr(self.contact_page, "description"))
+		self.assert_(hasattr(self.contact_page, "discussionUrl"))
+		self.assert_(hasattr(self.contact_page, "editor"))
+		self.assert_(hasattr(self.contact_page, "educationalAlignment"))
+		self.assert_(hasattr(self.contact_page, "educationalUse"))
+		self.assert_(hasattr(self.contact_page, "encoding"))
+		self.assert_(hasattr(self.contact_page, "encodings"))
+		self.assert_(hasattr(self.contact_page, "genre"))
+		self.assert_(hasattr(self.contact_page, "headline"))
+		self.assert_(hasattr(self.contact_page, "image"))
+		self.assert_(hasattr(self.contact_page, "inLanguage"))
+		self.assert_(hasattr(self.contact_page, "interactionCount"))
+		self.assert_(hasattr(self.contact_page, "interactivityType"))
+		self.assert_(hasattr(self.contact_page, "isBasedOnUrl"))
+		self.assert_(hasattr(self.contact_page, "isFamilyFriendly"))
+		self.assert_(hasattr(self.contact_page, "isPartOf"))
+		self.assert_(hasattr(self.contact_page, "keywords"))
+		self.assert_(hasattr(self.contact_page, "lastReviewed"))
+		self.assert_(hasattr(self.contact_page, "learningResourceType"))
+		self.assert_(hasattr(self.contact_page, "mainContentOfPage"))
+		self.assert_(hasattr(self.contact_page, "mentions"))
+		self.assert_(hasattr(self.contact_page, "name"))
+		self.assert_(hasattr(self.contact_page, "offers"))
+		self.assert_(hasattr(self.contact_page, "primaryImageOfPage"))
+		self.assert_(hasattr(self.contact_page, "provider"))
+		self.assert_(hasattr(self.contact_page, "publisher"))
+		self.assert_(hasattr(self.contact_page, "publishingPrinciples"))
+		self.assert_(hasattr(self.contact_page, "relatedLink"))
+		self.assert_(hasattr(self.contact_page, "review"))
+		self.assert_(hasattr(self.contact_page, "reviewedBy"))
+		self.assert_(hasattr(self.contact_page, "reviews"))
+		self.assert_(hasattr(self.contact_page, "sameAs"))
+		self.assert_(hasattr(self.contact_page, "significantLink"))
+		self.assert_(hasattr(self.contact_page, "significantLinks"))
+		self.assert_(hasattr(self.contact_page, "sourceOrganization"))
+		self.assert_(hasattr(self.contact_page, "specialty"))
+		self.assert_(hasattr(self.contact_page, "text"))
+		self.assert_(hasattr(self.contact_page, "thumbnailUrl"))
+		self.assert_(hasattr(self.contact_page, "timeRequired"))
+		self.assert_(hasattr(self.contact_page, "typicalAgeRange"))
+		self.assert_(hasattr(self.contact_page, "url"))
+		self.assert_(hasattr(self.contact_page, "version"))
+		self.assert_(hasattr(self.contact_page, "video"))
+
+	def tearDown(self):
+		pass
+
+
+class TestContactPoint(unittest.TestCase):
+
+	def setUp(self):
+		self.contact_point = ContactPoint()
+
+	def test_init(self):
+		self.assertEquals(type(self.contact_point), ContactPoint)
+
+	def test_rdf_properties(self):
+		self.assert_(hasattr(self.contact_point, "additionalType"))
+		self.assert_(hasattr(self.contact_point, "alternateName"))
+		self.assert_(hasattr(self.contact_point, "areaServed"))
+		self.assert_(hasattr(self.contact_point, "availableLanguage"))
+		self.assert_(hasattr(self.contact_point, "contactOption"))
+		self.assert_(hasattr(self.contact_point, "contactType"))
+		self.assert_(hasattr(self.contact_point, "description"))
+		self.assert_(hasattr(self.contact_point, "email"))
+		self.assert_(hasattr(self.contact_point, "faxNumber"))
+		self.assert_(hasattr(self.contact_point, "hoursAvailable"))
+		self.assert_(hasattr(self.contact_point, "image"))
+		self.assert_(hasattr(self.contact_point, "name"))
+		self.assert_(hasattr(self.contact_point, "productSupported"))
+		self.assert_(hasattr(self.contact_point, "sameAs"))
+		self.assert_(hasattr(self.contact_point, "telephone"))
+		self.assert_(hasattr(self.contact_point, "url"))
+
+	def tearDown(self):
+		pass
+
+
+class TestContactPointOption(unittest.TestCase):
+
+	def setUp(self):
+		self.contact_point_option = ContactPointOption()
+
+	def test_init(self):
+		self.assertEquals(type(self.contact_point_option), ContactPointOption)
+
+	def test_rdf_properties(self):
+		self.assert_(hasattr(self.contact_point_option, "additionalType"))
+		self.assert_(hasattr(self.contact_point_option, "alternateName"))
+		self.assert_(hasattr(self.contact_point_option, "description"))
+		self.assert_(hasattr(self.contact_point_option, "image"))
+		self.assert_(hasattr(self.contact_point_option, "name"))
+		self.assert_(hasattr(self.contact_point_option, "sameAs"))
+		self.assert_(hasattr(self.contact_point_option, "url"))
+
+	def tearDown(self):
+		pass
+
+
+class TestContinent(unittest.TestCase):
+
+	def setUp(self):
+		self.continent = Continent()
+
+	def test_init(self):
+		self.assertEquals(type(self.continent), Continent)
+
+	def test_rdf_properties(self):
+		self.assert_(hasattr(self.continent, "additionalType"))
+		self.assert_(hasattr(self.continent, "address"))
+		self.assert_(hasattr(self.continent, "aggregateRating"))
+		self.assert_(hasattr(self.continent, "alternateName"))
+		self.assert_(hasattr(self.continent, "containedIn"))
+		self.assert_(hasattr(self.continent, "description"))
+		self.assert_(hasattr(self.continent, "event"))
+		self.assert_(hasattr(self.continent, "events"))
+		self.assert_(hasattr(self.continent, "faxNumber"))
+		self.assert_(hasattr(self.continent, "geo"))
+		self.assert_(hasattr(self.continent, "globalLocationNumber"))
+		self.assert_(hasattr(self.continent, "image"))
+		self.assert_(hasattr(self.continent, "interactionCount"))
+		self.assert_(hasattr(self.continent, "isicV4"))
+		self.assert_(hasattr(self.continent, "logo"))
+		self.assert_(hasattr(self.continent, "map"))
+		self.assert_(hasattr(self.continent, "maps"))
+		self.assert_(hasattr(self.continent, "name"))
+		self.assert_(hasattr(self.continent, "openingHoursSpecification"))
+		self.assert_(hasattr(self.continent, "photo"))
+		self.assert_(hasattr(self.continent, "photos"))
+		self.assert_(hasattr(self.continent, "review"))
+		self.assert_(hasattr(self.continent, "reviews"))
+		self.assert_(hasattr(self.continent, "sameAs"))
+		self.assert_(hasattr(self.continent, "telephone"))
+		self.assert_(hasattr(self.continent, "url"))
+
+	def tearDown(self):
+		pass
+
+
+class TestConvenienceStore(unittest.TestCase):
+
+	def setUp(self):
+		self.convenience_store = ConvenienceStore()
+
+	def test_init(self):
+		self.assertEquals(type(self.convenience_store), ConvenienceStore)
+
+	def test_rdf_properties(self):
+		self.assert_(hasattr(self.convenience_store, "additionalType"))
+		self.assert_(hasattr(self.convenience_store, "address"))
+		self.assert_(hasattr(self.convenience_store, "aggregateRating"))
+		self.assert_(hasattr(self.convenience_store, "alternateName"))
+		self.assert_(hasattr(self.convenience_store, "branchOf"))
+##		self.assert_(hasattr(self.convenience_store, "containedIn"))
+		self.assert_(hasattr(self.convenience_store, "currenciesAccepted"))
+		self.assert_(hasattr(self.convenience_store, "description"))
+		self.assert_(hasattr(self.convenience_store, "event"))
+		self.assert_(hasattr(self.convenience_store, "events"))
+		self.assert_(hasattr(self.convenience_store, "faxNumber"))
+		self.assert_(hasattr(self.convenience_store, "geo"))
+		self.assert_(hasattr(self.convenience_store, "globalLocationNumber"))
+		self.assert_(hasattr(self.convenience_store, "image"))
+		self.assert_(hasattr(self.convenience_store, "interactionCount"))
+		self.assert_(hasattr(self.convenience_store, "isicV4"))
+		self.assert_(hasattr(self.convenience_store, "logo"))
+		self.assert_(hasattr(self.convenience_store, "map"))
+		self.assert_(hasattr(self.convenience_store, "maps"))
+		self.assert_(hasattr(self.convenience_store, "name"))
+		self.assert_(hasattr(self.convenience_store, "openingHours"))
+		self.assert_(hasattr(self.convenience_store, "openingHoursSpecification"))
+		self.assert_(hasattr(self.convenience_store, "paymentAccepted"))
+		self.assert_(hasattr(self.convenience_store, "photo"))
+		self.assert_(hasattr(self.convenience_store, "photos"))
+		self.assert_(hasattr(self.convenience_store, "priceRange"))
+		self.assert_(hasattr(self.convenience_store, "review"))
+		self.assert_(hasattr(self.convenience_store, "reviews"))
+		self.assert_(hasattr(self.convenience_store, "sameAs"))
+		self.assert_(hasattr(self.convenience_store, "telephone"))
+		self.assert_(hasattr(self.convenience_store, "url"))
+
+	def tearDown(self):
+		pass
+
+
+class TestCookAction(unittest.TestCase):
+
+	def setUp(self):
+		self.cook_action = CookAction()
+
+	def test_init(self):
+		self.assertEquals(type(self.cook_action), CookAction)
+
+	def test_rdf_properties(self):
+		self.assert_(hasattr(self.cook_action, "additionalType"))
+		self.assert_(hasattr(self.cook_action, "agent"))
+		self.assert_(hasattr(self.cook_action, "alternateName"))
+		self.assert_(hasattr(self.cook_action, "description"))
+		self.assert_(hasattr(self.cook_action, "endTime"))
+		self.assert_(hasattr(self.cook_action, "foodEstablishment"))
+		self.assert_(hasattr(self.cook_action, "foodEvent"))
+		self.assert_(hasattr(self.cook_action, "image"))
+		self.assert_(hasattr(self.cook_action, "instrument"))
+		self.assert_(hasattr(self.cook_action, "location"))
+		self.assert_(hasattr(self.cook_action, "name"))
+		self.assert_(hasattr(self.cook_action, "object"))
+		self.assert_(hasattr(self.cook_action, "participant"))
+		self.assert_(hasattr(self.cook_action, "recipe"))
+		self.assert_(hasattr(self.cook_action, "result"))
+		self.assert_(hasattr(self.cook_action, "sameAs"))
+		self.assert_(hasattr(self.cook_action, "startTime"))
+		self.assert_(hasattr(self.cook_action, "url"))
+
+	def tearDown(self):
+		pass
 
 
 if __name__ == '__main__':

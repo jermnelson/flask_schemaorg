@@ -101,3 +101,26 @@ def main():
     SCHEMAORG_RDF = schemaorg_graph
 
 main()
+
+##import re
+##name_re = re.compile(r"models.(\w+)")
+##def create_test(class_, instance_name):
+##    if not name_re.search(str(class_)):
+##        print("Cannot extract class name from {}".format(class_))
+##        return
+##    class_name = name_re.search(str(class_)).groups()[0]
+##    print("class Test{}(unittest.TestCase):\n".format(class_name))
+##    print("\tdef setUp(self):")
+##    print("\t\tself.{} = {}()\n".format(instance_name, class_name))
+##    print("\tdef test_init(self):")
+##    print("\t\tself.assertEquals(type(self.{}), {})\n".format(instance_name,
+##                                                           class_name))
+##    print("\tdef test_rdf_properties(self):")
+##    for row in dir(class_):
+##        if type(row) == unicode:
+##            print("""\t\tself.assert_(hasattr(self.{}, "{}"))""".format(
+##                 instance_name,
+##                 row))
+##    print("")
+##    print("\tdef tearDown(self):")
+##    print("\t\tpass")
