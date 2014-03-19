@@ -13,6 +13,7 @@
 #-------------------------------------------------------------------------------
 
 import json
+import re
 import sys
 
 from types import MethodType
@@ -24,6 +25,7 @@ CLASS_URI = URIRef(u'http://www.w3.org/2000/01/rdf-schema#Class')
 DOMAIN_URI = URIRef(u'http://schema.org/domainIncludes')
 SUBCLASS_URI = URIRef(u'http://www.w3.org/2000/01/rdf-schema#subClassOf')
 
+MODEL_TYPE_RE = re.compile(r"models.(\w+)")
 class SchemaOrgEntity(object):
     """SchemaOrgEntity is a the base class for Flask-BIBFRAME Python Classes used
     in Flask applications"""
@@ -32,6 +34,9 @@ class SchemaOrgEntity(object):
         "Initializes an instance and sets parameters for the instance"
         self.identifiers = kwargs.get('identifiers', {})
         self.semantic_stores = kwargs.get('semantic_stores', [])
+        if MODEL_TYPE_RE.search(str(self.__class__)):
+            model_type = MODEL_TYPE_RE.search(str(self.__class__)).groups()[0]
+            setattr(self, '@type', model_type)
         # Populates RDF properties
         for key in kwargs.keys():
             if hasattr(self, key):

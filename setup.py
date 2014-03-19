@@ -6,7 +6,7 @@ This Flask extension provides  for `Schema.org <http://schema.org>`_ Linked
 Data support in Flask applications.
 """
 __author__ = "Jeremy Nelson"
-__version_info__ = ('0', '0', '1')
+__version_info__ = ('0', '0', '2')
 __version__ = '.'.join(__version_info__)
 
 from setuptools import find_packages, setup
